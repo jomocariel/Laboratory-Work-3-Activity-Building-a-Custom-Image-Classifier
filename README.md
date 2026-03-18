@@ -38,7 +38,7 @@ Students must answer the following:
 ○ What challenges did you encounter while using your own dataset?
 - Class imbalance — there were naturally more images for some categories than for others, and the model learned to favor the class with more images during prediction.
   
-Image inconsistency — images taken from different angles, lighting, and distances made it difficult for the model to find a consistent pattern.
+- Image inconsistency — images taken from different angles, lighting, and distances made it difficult for the model to find a consistent pattern.
 
 ○ How can data augmentation improve your model?
   - Data augmentation is a technique to artificially increase your dataset by generating variations of your current images. This means you can turn an image around, rotate it slightly, or zoom in on it. This forces your model to be more robust because it cannot assume a certain orientation or lighting to classify an image. For a small custom dataset, this technique can almost double or triple your training images without acquiring a single new image. This directly helps you avoid overfitting because you are providing more images.
