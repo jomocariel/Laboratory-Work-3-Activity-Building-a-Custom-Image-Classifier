@@ -57,15 +57,31 @@ For a web application, the model can be deployed as a REST API using a framework
 Guide Questions (Student Explanation & Reflection)
 Students must answer:
 Visualization & Overfitting
+
 1. What signs indicated overfitting in your first model?
+ - In the beginning, it became clear that the model was overfitting because it performed really well on the training data but struggled on new, unseen data. The training accuracy kept going up, while the validation accuracy stayed the same or even dropped. This gap was a strong hint that the model was just memorizing instead of actually learning.
+   
 2. How did data augmentation affect validation accuracy?
 Model Improvement
+- Adding data augmentation really seemed to boost the validation accuracy a lot. It was kind of obvious once we saw the numbers go up. The idea is to tweak the training images just a bit, you know, like rotating them or flipping some over. That way, the model gets to see more different versions of the same stuff. I think this exposes it to a wider range of things, which probably helps it pick up on patterns without getting stuck on one way of looking at the images. Without that variety, it might not handle new data as well, but this change made it more reliable overall. Or at least, thats how it looks from the results.
+
 3. What is the purpose of dropout layers?
+- Dropout layers are supposed to stop the model from relying too much on just a few neurons, you know. It kind of forces things to spread out more. During training, what happens is some neurons get turned off randomly, which makes the model have to figure out how to learn without them all the time. That seems like it helps with balance. Overfitting is this problem where the model gets too tuned to the training data, and dropout cuts that down. I might be oversimplifying, but it makes the whole thing more robust, less likely to mess up on new stuff. Anyway, the random turning off part stands out, it pushes for that even learning.
+  
 4. Why does data augmentation improve generalization?
 Performance Comparison
+- Data augmentation is really helpful because it gives the model a lot of examples to learn from. The model does not see the data every time. It sees the data in a different way each time. This helps the model recognize patterns in a way. So the model can handle data that it has not seen before. Data augmentation is very useful for this reason. The model can learn from different versions of the data. This means the model can recognize patterns, in data augmentation easily.
+  
 5. Compare accuracy before and after improvements.
+- The model was pretty good at training it got things right.. When it came to validation it did not do as well. So we tried a things to make it better, like dropout and data augmentation. And it worked the validation accuracy got better. It is now closer, to the training accuracy of the model. This means the model is more balanced and reliable the model is better now.
+  
 6. Which technique contributed most to improvement?
+- While both techniques helped data augmentation usually had the impact. It directly improved how the model handled data by making the training data more diverse.Dropout also helped,. Mostly, as a supporting method to prevent overfitting.
+Data augmentation and dropout both played a role. Data augmentation was more effective.
 
 Deployment & Application
 7. Why is saving the model important?
+- Saving the model is really important. This is because you can use the model again later. You do not have to train the model from the beginning. Training the model takes a lot of time. It uses a lot of resources. So saving the model is an idea. This way you can keep the version of the model. You can also easily use the model. Share the model with others. Saving the model is important, for your model.
+  
 8. How can this model be deployed in a real-world system?
+- The model can be used in lots of things, like apps, websites or devices when it is actually being used. For example the model could be used in an app that recognizes images a system that helps doctors make a diagnosis or in systems that help keep people safe. When the model is working it can look at things think about them and then tell you what it thinks is going on right away.
