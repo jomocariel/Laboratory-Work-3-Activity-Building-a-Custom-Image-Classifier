@@ -34,14 +34,17 @@ Students must answer the following:
 - It made a very noticeable difference. The classes where I had fewer than 200 images were consistently the classes that the model struggled with, either under-predicting them or getting them mixed up with classes that looked similar. The classes with 250+ images had much cleaner decision boundaries. Basically, the more images you can feed the model, the better it will understand what the actual features of a class are versus the accidental features that are present in the background. 
 
 4. Critical Thinking
+   
 ○ What challenges did you encounter while using your own dataset?
--Class imbalance — there were naturally more images for some categories than for others, and the model learned to favor the class with more images during prediction.
+- Class imbalance — there were naturally more images for some categories than for others, and the model learned to favor the class with more images during prediction.
+  
 Image inconsistency — images taken from different angles, lighting, and distances made it difficult for the model to find a consistent pattern.
 
 ○ How can data augmentation improve your model?
   - Data augmentation is a technique to artificially increase your dataset by generating variations of your current images. This means you can turn an image around, rotate it slightly, or zoom in on it. This forces your model to be more robust because it cannot assume a certain orientation or lighting to classify an image. For a small custom dataset, this technique can almost double or triple your training images without acquiring a single new image. This directly helps you avoid overfitting because you are providing more images.
-  - 
+    
 5. Application
+   
 ○ Suggest a real-world application for your trained model.
 - A good example of this is the application of a plant disease detection system for small-scale farmers. A machine learning model may be used to identify the condition of the leaves of the crops, whether they are in good condition or have already been affected by diseases or pests, based on the photo of the leaves. In the context of the geographical location of Mindanao, this may be useful to small-scale farmers.
   
